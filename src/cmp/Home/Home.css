@@ -1,0 +1,134 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+/* header css */
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+    transition: all 0.5s ease-in 0s;
+}
+
+.fade_header{
+    background-color: #000;
+}
+
+.header_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_content img:first-child{
+    width: 100px;
+}
+
+.header_content img:last-child{
+    width: 30px;
+    cursor: pointer;
+}
+
+
+/* banner css */
+
+.banner{
+    width: 100%;
+    height: 450px;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+}
+
+.banner_content{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 150px;
+}
+
+.banner_content .buttons{
+    display: flex;
+    align-items: center;
+}
+
+.banner_content .buttons button{
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background-color: #E50914;
+    color: #fff;
+    margin: 10px 0px;
+    font-weight: 600;
+}
+
+.banner_content .buttons button:hover{
+    background-color: #C11119;
+    cursor: pointer;
+}
+
+.banner_content p{
+    width: 500px;
+}
+
+.banner_opacity{
+    height: 180px;
+    background-image: linear-gradient(180deg, transparent, rgba(27,27,27,0.61), #111);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* movieList css */
+
+.movieList{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 0px 20px;
+    
+}
+
+.movieList h2{
+    margin: 20px 0px;
+}
+
+.movieList .smallTitle{
+    font-size: 20px;
+}
+
+.posters{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.posters::-webkit-scrollbar{
+    display: none;
+}
+
+.poster{
+    max-height: 120px;
+    padding: 0px 5px;
+    transition: transform 450ms;
+}
+
+.poster:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.largePoster{
+    max-height: 250px;
+}
